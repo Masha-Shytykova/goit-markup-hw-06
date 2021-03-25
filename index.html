@@ -81,6 +81,69 @@
                 ></use>
               </svg>
             </button>
+            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="form" autocomplete="off">
+              <label class="form-label"
+                >Имя
+                <span class="form-input-wrapper">
+                  <input class="form-input" type="text" name="name" />
+                  <svg class="form-icon">
+                    <use
+                      href="./images/backgroundicon/symbol-defs.svg#icon-person-black"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
+
+              <label class="form-label"
+                >Телефон
+                <span class="form-input-wrapper">
+                  <input class="form-input" type="tel" name="phone" />
+                  <svg class="form-icon">
+                    <use
+                      href="./images/backgroundicon/symbol-defs.svg#icon-phone-black"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
+
+              <label class="form-label"
+                >Почта
+                <span class="form-input-wrapper">
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="mail"
+                    autocomplete="on"
+                  />
+                  <svg class="form-icon">
+                    <use
+                      href="./images/backgroundicon/symbol-defs.svg#icon-email-black"
+                    ></use>
+                  </svg>
+                </span>
+              </label>
+
+              <label class="form-label" for="comment">Комментарий</label>
+              <textarea
+                class="form-comment"
+                name="comment"
+                id="comment"
+                placeholder="Введите текст"
+              ></textarea>
+
+              <input
+                class="form-input-policy visually-hidden"
+                type="checkbox"
+                name="policy"
+                id="policy"
+              />
+              <label class="form-label-policy" for="policy"
+                >Соглашаюсь с рассылкой и принимаю&nbsp
+                <a class="form-link-policy" href="">Условия договора</a></label
+              >
+              <button class="form-button" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
@@ -456,7 +519,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="wrapper-join">
           <b class="join">присоединяйтесь</b>
           <ul class="social-list list">
             <li class="social-item">
@@ -495,6 +558,23 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div>
+          <b class="join">Подпишитесь на рассылку</b>
+          <form action="">
+            <label for=""
+              ><input class="subscribe-input" type="text" placeholder="E-mail"
+            /></label>
+
+            <button class="subscribe-submit" type="submit">
+              Подписаться
+              <svg class="send-icon">
+                <use
+                  href="./images/backgroundicon/symbol-defs.svg#icon-icon-send"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
