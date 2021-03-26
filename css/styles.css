@@ -728,10 +728,9 @@ img {
   outline: none;
 }
 
-.wrapper-join {
-  margin-right: 93px;
+.wrapper-subscribe {
+  margin-left: auto;
 }
-
 .subscribe {
   display: flex;
 }
