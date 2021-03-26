@@ -139,7 +139,7 @@
                 id="policy"
               />
               <label class="form-label-policy" for="policy"
-                >Соглашаюсь с рассылкой и принимаю&nbsp
+                >Соглашаюсь с рассылкой и принимаю&nbsp;
                 <a class="form-link-policy" href="">Условия договора</a></label
               >
               <button class="form-button" type="submit">Отправить</button>
@@ -561,9 +561,14 @@
         </div>
         <div>
           <b class="join">Подпишитесь на рассылку</b>
-          <form action="">
-            <label for=""
-              ><input class="subscribe-input" type="text" placeholder="E-mail"
+          <form class="subscribe" action="#" autocomplete="off">
+            <label
+              ><input
+                class="subscribe-input"
+                type="email"
+                name="subscribe-email"
+                placeholder="E-mail"
+                autocomplete="off"
             /></label>
 
             <button class="subscribe-submit" type="submit">

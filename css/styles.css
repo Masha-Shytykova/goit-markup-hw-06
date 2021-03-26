@@ -306,6 +306,12 @@ img {
 .close-icon {
   width: 18px;
   height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:hover > .close-icon,
+.modal-close-button:focus > .close-icon {
+  fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -725,24 +731,39 @@ img {
 .wrapper-join {
   margin-right: 93px;
 }
+
+.subscribe {
+  display: flex;
+}
 .subscribe-input {
   height: 50px;
   width: 358px;
   margin-right: 12px;
+  padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
   border-radius: 4px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-submit {
   height: 50px;
-  width: 200px;
+  min-width: 200px;
 
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
+  /* justify-content: center; */
   align-items: center;
 
-  padding: 10px 29px 28px;
+  padding: 10px 29px;
   border-radius: 4px;
 
   font-weight: 700;
